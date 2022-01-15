@@ -21,6 +21,11 @@ A theme based on Powerline. For more information, see:
 
 ````https://github.com/Bash-it/bash-it/tree/master/themes/powerline````
 
+Dark theme: https://github.com/renanliraj/bash-it-themes/tree/main/magiccube/magiccube_dark.png
+Light theme: https://github.com/renanliraj/bash-it-themes/tree/main/magiccube/magiccube_light.png
+
 #### Sushu
 A clean theme useful in light and dark terminal
 
+Dark theme: https://github.com/renanliraj/bash-it-themes/tree/main/sushu/sushu_dark.png
+Light theme: https://github.com/renanliraj/bash-it-themes/tree/main/sushu/sushu_light.png
