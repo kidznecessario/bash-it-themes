@@ -17,13 +17,13 @@ You can change the theme name on your .bash_rc (Linux) or .bash_profile (macOS) 
 ### Sushu
 A clean theme useful in light and dark terminal
 
-- Dark theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/sushu/sushu_dark.png)
-- Light theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/sushu/sushu_light.png)
+- Dark theme: ![alt text](https://raw.githubusercontent.com/kidznecessario/bash-it-themes-media/main/sushu/sushu_dark.png)
+- Light theme: ![alt text](https://raw.githubusercontent.com/kidznecessario/bash-it-themes-media/main/sushu/sushu_light.png)
 
 ### Magiccube
 A theme based on Powerline. For more information, check:
 
 ````https://github.com/Bash-it/bash-it/tree/master/themes/powerline````
 
-- Dark theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/magiccube/magiccube_dark.png)
-- Light theme: ![alt_text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/magiccube/magiccube_light.png)
+- Dark theme: ![alt text](https://raw.githubusercontent.com/kidznecessario/bash-it-themes-media/main/magiccube/magiccube_dark.png)
+- Light theme: ![alt_text](https://raw.githubusercontent.com/kidznecessario/bash-it-themes-media/main/magiccube/magiccube_light.png)
