@@ -2,15 +2,15 @@
 
 ## Installation
 
-First you need to install bash-it. To see how, visit:
+First you need to install bash-it. Check:
 
 ````https://github.com/Bash-it/bash-it````
 
 Copy the directory themes to bash-it theme directory:
 
-````.bash-it/themes/````
+````$HOME/.bash-it/themes/````
 
-Then you can change the theme name on your .bash_rc or .bash_profile file, usually on line:
+Then you can change the theme name on your .bash_rc (Linux) or .bash_profile (macOS) file, usually on line 14:
 
 ````export BASH_IT_THEME='theme_name'````
 
@@ -21,11 +21,11 @@ A theme based on Powerline. For more information, see:
 
 ````https://github.com/Bash-it/bash-it/tree/master/themes/powerline````
 
-- Dark theme: https://github.com/renanliraj/bash-it-themes/tree/main/magiccube/magiccube_dark.png
-- Light theme: https://github.com/renanliraj/bash-it-themes/tree/main/magiccube/magiccube_light.png
+- Dark theme: ![alt text](https://github.com/renanliraj/bash-it-themes/tree/main/magiccube/magiccube_dark.png)
+- Light theme: ![alt_text](https://github.com/renanliraj/bash-it-themes/tree/main/magiccube/magiccube_light.png)
 
 #### Sushu
 A clean theme useful in light and dark terminal
 
-- Dark theme: https://github.com/renanliraj/bash-it-themes/tree/main/sushu/sushu_dark.png
-- Light theme: https://github.com/renanliraj/bash-it-themes/tree/main/sushu/sushu_light.png
+- Dark theme: ![alt text](https://github.com/renanliraj/bash-it-themes/tree/main/sushu/sushu_dark.png)
+- Light theme: ![alt text](https://github.com/renanliraj/bash-it-themes/tree/main/sushu/sushu_light.png)
