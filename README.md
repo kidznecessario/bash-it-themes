@@ -16,6 +16,12 @@ Then you can change the theme name on your .bash_rc (Linux) or .bash_profile (ma
 
 ----
 
+#### Sushu
+A clean theme useful in light and dark terminal
+
+- Dark theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/sushu/sushu_dark.png)
+- Light theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/sushu/sushu_light.png)
+
 #### Magiccube
 A theme based on Powerline. For more information, check:
 
@@ -23,9 +29,3 @@ A theme based on Powerline. For more information, check:
 
 - Dark theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/magiccube/magiccube_dark.png)
 - Light theme: ![alt_text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/magiccube/magiccube_light.png)
-
-#### Sushu
-A clean theme useful in light and dark terminal
-
-- Dark theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/sushu/sushu_dark.png)
-- Light theme: ![alt text](https://raw.githubusercontent.com/renanliraj/bash-it-themes/main/sushu/sushu_light.png)
