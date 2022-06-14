@@ -17,7 +17,7 @@ Then you can change the theme name on your .bash_rc (Linux) or .bash_profile (ma
 ----
 
 #### Magiccube
-A theme based on Powerline. For more information, see:
+A theme based on Powerline. For more information, check:
 
 ````https://github.com/Bash-it/bash-it/tree/master/themes/powerline````
 
