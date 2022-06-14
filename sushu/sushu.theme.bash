@@ -15,7 +15,7 @@ RVM_THEME_PROMPT_PREFIX="|"
 RVM_THEME_PROMPT_SUFFIX="|"
 
 : "${THEME_CLOCK_CHAR_COLOR:=${red?}}"
-: "${THEME_CLOCK_FORMAT:="%d %b %y %H:%M"}"
+: "${THEME_CLOCK_FORMAT:="%d %b %y %H:%M:%S"}"
 
 function sushu_clock() {
 	printf '%s' "$(clock_prompt) "
