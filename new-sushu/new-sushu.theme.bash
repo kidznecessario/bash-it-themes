@@ -26,7 +26,7 @@ function sushu_clock() {
 
 function sushu_prompt_command() {
     PS1="\n${cyan}$(sushu_clock) "
-	PS1+="${cyan}| ${blue}\u @ \h "
+	PS1+="${blue}\u @ \h "
 	PS1+="${purple}\w"
     PS1+="\n${bold_cyan?}$(scm_prompt_char_info) "
 	PS1+="${cyan}→${reset_color} "
