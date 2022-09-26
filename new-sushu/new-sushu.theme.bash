@@ -24,7 +24,11 @@ function sushu_clock() {
 }
 
 function sushu_right_align() {
-	printf "%*s" $COLUMNS "$1 > $2"
+	if k8s_context_prompt &>/dev/null; then
+		printf "%*s" $COLUMNS "$1 > $2"
+	else
+		printf "%*s" $COLUMNS
+	fi
 }
 
 function sushu_prompt_command() {
