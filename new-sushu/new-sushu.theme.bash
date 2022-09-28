@@ -26,8 +26,14 @@ function sushu_clock() {
 function sushu_right_align() {
 	if k8s_context_prompt &>/dev/null; then
 		printf "%*s" $COLUMNS "$1 > $2"
-	else
-		printf "%*s" $COLUMNS
+	# else
+	# 	printf "%*s" $COLUMNS
+	fi
+}
+
+function sushu_python() {
+	if python_version_prompt &>/dev/null; then
+		printf "$(python_version_prompt) | "
 	fi
 }
 
@@ -36,7 +42,7 @@ function sushu_prompt_command() {
     PS1+="$(sushu_clock) "
 	PS1+="${blue}\u @ \h "
 	PS1+="${purple}\w\n"
-	PS1+="${cyan}$(python_version_prompt) | "
+	PS1+="${cyan}$(sushu_python)"
 	PS1+="${cyan?}$(scm_prompt_char_info) "
 	PS1+="${cyan}→${reset_color} "
 }
