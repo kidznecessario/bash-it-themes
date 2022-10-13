@@ -26,14 +26,12 @@ function sushu_clock() {
 function sushu_right_align() {
 	if k8s_context_prompt &>/dev/null; then
 		printf "%*s" $COLUMNS "$1 > $2"
-	# else
-	# 	printf "%*s" $COLUMNS
 	fi
 }
 
 function sushu_python() {
 	if python_version_prompt &>/dev/null; then
-		printf "$(python_version_prompt) | "
+		printf "$(python3 --version) | "
 	fi
 }
 
