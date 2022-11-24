@@ -20,13 +20,7 @@ RVM_THEME_PROMPT_SUFFIX="|"
 : "${THEME_CLOCK_FORMAT:="%d %b %y %H:%M:%S"}"
 
 function sushu_clock() {
-	printf "%s" "$(clock_prompt)"
-}
-
-function sushu_right_align() {
-	if k8s_context_prompt &>/dev/null; then
-		printf "%*s" $COLUMNS "$1 > $2"
-	fi
+	printf "%s" "$(date +"%Y %d %b %T")"
 }
 
 function sushu_python() {
@@ -35,13 +29,19 @@ function sushu_python() {
 	fi
 }
 
+function sushu_kubernetes() {
+	if k8s_context_prompt &>/dev/null; then
+		printf "%s" "$(k8s_context_prompt) > $(k8s_namespace_prompt)"
+	fi
+}
+
 function sushu_prompt_command() {
-    PS1="\n${my_red}\[$(tput sc; sushu_right_align "$(k8s_context_prompt)" "$(k8s_namespace_prompt)"; tput rc)\]"
-    PS1+="$(sushu_clock) "
-	PS1+="${blue}\u @ \h "
-	PS1+="${purple}\w\n"
+    PS1="\n$(sushu_clock) "
+	PS1+="${purple}\u @ \h "
+	PS1+="${my_red}\w\n"
 	PS1+="${cyan}$(sushu_python)"
 	PS1+="${cyan?}$(scm_prompt_char_info) "
+	PS1+="${cyan?}$(sushu_kubernetes)\n"
 	PS1+="${cyan}→${reset_color} "
 }
 
