@@ -30,14 +30,14 @@ function sushu_python() {
 }
 
 function sushu_terraform() {
-	if [[ $(terraform_workspace_prompt) ]]; then
-		printf "%s" "$(terraform_workspace_prompt) | "
+	if [[ $(terraform_workspace_prompt) && $(terraform_workspace_prompt) != "default" ]]; then
+		printf "%s" "Terraform $(terraform_workspace_prompt) | "
 	fi
 }
 
 function sushu_aws() {
 	if [[ $(aws_profile) ]]; then
-		printf "%s" "$(aws_profile) | "
+		printf "%s" "AWS $(aws_profile) | "
 	fi
 }
 
