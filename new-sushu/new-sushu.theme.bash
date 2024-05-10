@@ -24,14 +24,26 @@ function sushu_clock() {
 }
 
 function sushu_python() {
-	if python_version_prompt &>/dev/null; then
-		printf "$(python3 --version) | "
+	if [[ $(python_version_prompt) ]]; then
+		printf "%s" "$(python3 --version) | "
+	fi
+}
+
+function sushu_terraform() {
+	if [[ $(terraform_workspace_prompt) ]]; then
+		printf "%s" "$(terraform_workspace_prompt) | "
+	fi
+}
+
+function sushu_aws() {
+	if [[ $(aws_profile) ]]; then
+		printf "%s" "$(aws_profile) | "
 	fi
 }
 
 function sushu_kubernetes() {
-	if k8s_context_prompt &>/dev/null; then
-		printf "%s" "$(k8s_context_prompt) > $(k8s_namespace_prompt)"
+	if [[ $(k8s_context_prompt) ]]; then
+		printf "%s" "$(k8s_context_prompt) > $(k8s_namespace_prompt) | "
 	fi
 }
 
@@ -40,8 +52,9 @@ function sushu_prompt_command() {
 	PS1+="${purple}\u @ \h "
 	PS1+="${my_red}\w\n"
 	PS1+="${cyan}$(sushu_python)"
-	PS1+="${cyan?}$(scm_prompt_char_info) "
-	PS1+="${cyan?}$(sushu_kubernetes)\n"
+	PS1+="${cyan}$(sushu_terraform)"
+	PS1+="${cyan?}$(sushu_kubernetes)"
+	PS1+="${cyan?}$(scm_prompt_char_info)\n"
 	PS1+="${cyan}→${reset_color} "
 }
 
